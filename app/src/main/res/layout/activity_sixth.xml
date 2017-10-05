@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/myview"
+    tools:context="com.example.android.kidd.sixthActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/match"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="MATCH"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="28sp"
+                android:gravity="center"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/s"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:tag="s"
+                    android:text="S"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="50sp"
+                    android:textStyle="bold"
+                    android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/lin3"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/mTextField"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/lin1"
+                android:weightSum="2">
+
+
+                <ImageView
+                    android:id="@+id/singing"
+                    android:layout_width="0dp"
+                    android:background="@drawable/border1"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@drawable/singing"
+                    android:tag="singing"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/cooking"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:layout_weight="1"
+                    android:src="@drawable/cooking"
+                    android:background="@drawable/border1"
+                    android:tag="cooking"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/lin2"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/dog"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@drawable/dog"
+                    android:tag="dog"
+                    android:background="@drawable/border1"/>
+
+                <ImageView
+                    android:id="@+id/watch"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:src="@drawable/watch"
+                    android:tag="watch"
+                    android:background="@drawable/border1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

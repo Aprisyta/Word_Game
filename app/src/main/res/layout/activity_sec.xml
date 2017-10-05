@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/myview"
+    tools:context="com.example.android.kidd.secActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/match"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="MATCH"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="28sp"
+                android:gravity="center"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/c"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:tag="c"
+                    android:text="C"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="50sp"
+                    android:layout_weight="2"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/lin3"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/mTextField"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/lin1"
+                android:weightSum="2">
+
+
+                <ImageView
+                    android:id="@+id/crown"
+                    android:layout_width="0dp"
+
+                    android:background="@drawable/border1"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@drawable/crown"
+                    android:tag="crown"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/zebra"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:layout_weight="1"
+                    android:src="@drawable/zebra"
+                    android:background="@drawable/border1"
+                    android:tag="zebra"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/lin2"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/train"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@drawable/train"
+                    android:tag="train"
+                    android:background="@drawable/border1"/>
+
+                <ImageView
+                    android:id="@+id/watch"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:src="@drawable/watch"
+                    android:tag="watch"
+                    android:background="@drawable/border1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

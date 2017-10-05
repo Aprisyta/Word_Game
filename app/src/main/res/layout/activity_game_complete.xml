@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game_complete"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.kidd.GameCompleteActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Congratulations! You have completed this game!"
+        style="?android:textAppearanceLarge"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/score"
+        style="?android:textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Your score is: "/>
+
+    <ImageView
+        android:id="@+id/finalImage"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:src="@drawable/happy"
+        android:layout_weight="0.13"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:background="@drawable/border"/>
+
+
+</LinearLayout>
